@@ -3,12 +3,24 @@
 <!-- Le indica al navegador que el contenido es HTML 5. -->
 <html lang="en">
   <!-- Todo documento tiene una etiqueta html y esta es la madre de todas las etiquetas. -->
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CyberPage</title>
   </head>
+
   <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Introducción a HTML</a></li>
+        <li><a href="estructura.html">Estructura de un documento HTML</a></li>
+        <li><a href="introCss.html">Introducción a CSS</a></li>
+        <li><a href="introJS.html">Introducción a Javascript</a></li>
+        <li><a href="introDOM.html">Introducción al DOM</a></li>
+      </ul>
+    </nav>
+
     <h1>Encabezado principal</h1>
     <h2>Encabezado</h2>
     <h3>Encabezado</h3>
@@ -17,7 +29,7 @@
     <h6>Encabezado</h6>
     <hr />
     <h2>Otro tema</h2>
-    <h3>Parrafo</h3>
+    <h3>Parrafo 🤣😂</h3>
     <p>
       <span style="color: blue">Lorem ipsum dolor</span> sit, amet consectetur
       adipisicing elit.<br />
@@ -36,33 +48,99 @@
     <hr />
     <h2>Formulario</h2>
     <form action="/cyberform.html" method="GET">
-    <label for="nombre">Nombre</label><br />
-    <input
-      type="text"
-      name="nombre"
-      id="nombre"
-      placeholder="Indica tu nombre"
-    />
-    <br />
-    <br />
-    <label for="edad">Edad</label><br />
-    <input type="number"  name="edad" id="edad" placeholder="Indica edad" />
-    <br><br>
+      <label for="nombre">Nombre</label><br />
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="Indica tu nombre"
+      />
+      <br />
+      <br />
+      <label for="edad">Edad</label><br />
+      <input type="number" name="edad" id="edad" placeholder="Indica edad" />
+      <br /><br />
 
-    <label for="email">Email</label><br>
-    <input type="email" name="email" id="email" placeholder="Indica tu email">
-    <br><br>
+      <label for="email">Email</label><br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Indica tu email"
+      />
+      <br /><br />
 
-    <label for="password">Password</label><br>
-    <input type="password" name="password" id="password" placeholder="Password">
-    <br><br>
+      <label for="password">Password</label><br />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+      <br /><br />
 
-    <label for="texto">Texto</label><br>
-    <textarea name="texto" id="text" cols="30" rows="10" placeholder="Ingresa tu comentario"></textarea>
-    <br><br>
-    <input type="submit" value="Enviar" >
+      <label for="texto">Texto</label><br />
+      <textarea
+        name="texto"
+        id="text"
+        cols="30"
+        rows="10"
+        placeholder="Ingresa tu comentario"
+      ></textarea>
+      <br /><br />
+      <input type="submit" value="Enviar" />
     </form>
-    <br><br>
-    <img src="img/Cyberpunk_Edgerunners_@CDProjekt.jpg" alt="cyberpunk lucy" width="400">
+    <br /><br />
+    <img
+      src="img/Cyberpunk_Edgerunners_@CDProjekt.jpg"
+      alt="cyberpunk lucy"
+      width="400"
+    />
+    <hr />
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+    <ol>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+      <li>
+        <ul>
+          <li style="list-style: lower-roman">sub item</li>
+          <li style="list-style: lower-roman">sub item</li>
+          <li style="list-style: lower-roman">sub item</li>
+        </ul>
+      </li>
+    </ol>
+    <hr />
+    <h2>Tabla</h2>
+    <table style="border: solid 1px black; border-collapse: collapse">
+      <thead>
+        <tr>
+          <th style="border: solid 1px black">Implante</th>
+          <th style="border: solid 1px black">Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: solid 1px black">Ojo Laser</td>
+          <td style="border: solid 1px black">500.000</td>
+        </tr>
+        <tr>
+          <td style="border: solid 1px black">Audifono implantado</td>
+          <td style="border: solid 1px black">830.000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td style="border: solid 1px black">1.330.000</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
