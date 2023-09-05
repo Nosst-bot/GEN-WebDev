@@ -211,25 +211,33 @@ h1 + p {
 .contenedor-de-bordes > div {
   height: 100px;
   width: 100px;
-  border: 5px dotted #00ff00;
+  border: 15px dotted #00ff00;
   border-radius: 50%;
   margin-top: 20px;
 }
 
-.borde-1 {
+.contenedor-de-bordes .borde-1 {
+  border-style: dashed;
+}
+
+.contenedor-de-bordes .borde-2 {
   border-style: double;
 }
 
-.borde-2 {
-  border-style: double !important;
+.contenedor-de-bordes .borde-3 {
+  border-style: outset;
 }
 
-.borde-3 {
-  border-style: outset !important;
+.contenedor-de-bordes .borde-4 {
+  border-style: inset;
 }
 
-.borde-4 {
-  border-style: solid !important;
+.contenedor-de-bordes .borde-5 {
+  border-style: groove;
+}
+
+.contenedor-de-bordes .borde-6 {
+  border-style: solid;
 }
 
 .borde-en-una-linea {
