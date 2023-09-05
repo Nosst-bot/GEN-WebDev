@@ -247,3 +247,16 @@ h1 + p {
   width: 100px;
   margin-top: 20px;
 }
+
+.flex-container {
+  display: flex;
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.flex-container > div {
+  margin: 10px;
+  background-color: #007fff;
+  padding: 20px;
+}
