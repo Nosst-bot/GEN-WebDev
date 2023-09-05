@@ -296,10 +296,29 @@ h1 + p {
 
 .flex-container :nth-child(2) {
   flex-grow: 3;
+  background-color: #ad33b9;
 }
 .flex-container :nth-child(3) {
   flex-grow: 3;
   background-color: #00ff00;
 }
 
+.flex-container-2 {
+  display: flex;
+  background-color: #ddd;
+}
 
+.flex-container-2 > div {
+  background-color: #007fff;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  width: 800px;
+}
+
+.flex-container-2 :nth-child(2) {
+  flex-shrink: 6;
+  background-color: #6ad6f1;
+}
