@@ -76,7 +76,8 @@ span {
   color: blueviolet;
 }
 
-main p, span{
+main p,
+span {
   background-color: aquamarine;
 }
 
@@ -85,76 +86,156 @@ main p, span{
 }
 
 h1 + p {
-    color: red;
+  color: red;
 }
 
 .container {
-    border-top: 1px solid black;
-    padding: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  border-top: 1px solid black;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: grey;
+  color: #fff;
 }
 
 .container > .content > p {
-    background-color: white;
-    color: black;
-    font-size: 25px;
-    font-weight: 100;
-    font-style: oblique;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  font-weight: 100;
+  font-style: oblique;
 }
 
 .content > h3 {
-    background-color: bisque;
-    font: bold 30px Arial, serif;
-    text-align: center;
-    line-height: 60px;
+  background-color: bisque;
+  font: bold 30px Arial, serif;
+  text-align: center;
+  line-height: 60px;
 }
 
 .mydiv {
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
-    padding: 20px;
-    background-color: black;
-    background: url(img/Cyberpunk_Edgerunners_@CDProjekt.jpg);
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: black;
+  background: url(img/Cyberpunk_Edgerunners_@CDProjekt.jpg);
 }
 
 .div-in-mydiv {
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0.9);
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .div-in-mydiv-2 {
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-    background-color: #ff0000;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: #ff0000;
 }
 
 .div-in-mydiv-3 {
-    height: 50px;
-    width: 50px;
-    margin: 10px 20px 30px 40px;
-    border: 1px solid black;
-    background-color: #00ff00;
+  height: 50px;
+  width: 50px;
+  margin: 10px 20px 30px 40px;
+  border: 1px solid black;
+  background-color: #00ff00;
 }
 
 .tamano {
-    margin: 100px 20px;
-    height: 200px;
-    width: 200px;
-    background-color: black;
+  margin: 100px 20px;
+  height: 200px;
+  width: 200px;
+  background-color: black;
 }
 
 .tamano-hijo {
-    width: 25%;
-    height: 25%;
-    background-color: red;
+  width: 25%;
+  height: 25%;
+  background-color: red;
 }
 
 .div-vh-vw {
-    height: 100vh;
-    width: 100vw;
-    background-color: blue;
+  height: 100vh;
+  width: calc(100vw - 40px);
+  background-color: blue;
+}
+
+.punto {
+  height: 100pt;
+  width: 100pt;
+  background-color: red;
+}
+
+.div-rem {
+  height: 20rem;
+  width: 20rem;
+  background-color: #00ff00;
+}
+
+.div-em {
+  height: 20em;
+  width: 20em;
+  background-color: blue;
+}
+
+._contenedor {
+  background-color: red;
+  width: 500px;
+  height: 500px;
+}
+
+._contenido {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  max-height: 200px;
+  max-width: 200px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+._otrocontenido {
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+}
+
+.contenido-grande {
+  height: 400px;
+  width: 400px;
+  background-color: chocolate;
+}
+
+.contenedor-de-bordes > div {
+  height: 100px;
+  width: 100px;
+  border: 5px dotted #00ff00;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.borde-1 {
+  border-style: double;
+}
+
+.borde-2 {
+  border-style: double !important;
+}
+
+.borde-3 {
+  border-style: outset !important;
+}
+
+.borde-4 {
+  border-style: solid !important;
+}
+
+.borde-en-una-linea {
+  border: 1px solid red;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
 }
