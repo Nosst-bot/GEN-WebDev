@@ -1,7 +1,6 @@
 * {
   margin: 0;
   background-color: azure;
-  box-sizing: border-box;
 }
 
 .myli {
@@ -250,13 +249,57 @@ h1 + p {
 
 .flex-container {
   display: flex;
-  font-size: 20px;
+  flex-wrap: wrap;
+  /* flex-direction: row; */ /* column, roww, reverse, column-reverse, row-reverse */
+  /* flex-wrap: wrap-reverse; */ /* nowrap,wrap, wrap-reverse */
+  /*  flex-flow: row wrap; */ /* Es una combinacion de las propiedades flex-directio y flex-wrap */
+  font-size: 30px;
   border: 1px solid black;
   padding: 10px;
+  align-content: space-around;
+  height: 300px;
 }
-
+/* Flex Item */
 .flex-container > div {
-  margin: 10px;
   background-color: #007fff;
   padding: 20px;
+  width: 100px;
+  text-align: center;
+  line-height: 70px;
+  height: 70px;
+  margin: 10px;
 }
+
+.contenedor-perfecto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  width: 200px;
+  height: 200px;
+}
+
+.contenido-perfecto {
+  background-color: #00ff00;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container :nth-child(1) {
+  background-color: red;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.flex-container :nth-child(2) {
+  flex-grow: 3;
+}
+.flex-container :nth-child(3) {
+  flex-grow: 3;
+  background-color: #00ff00;
+}
+
+
