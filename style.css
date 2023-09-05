@@ -211,7 +211,7 @@ h1 + p {
 .contenedor-de-bordes > div {
   height: 100px;
   width: 100px;
-  border: 15px dotted #00ff00;
+  border: 18px dotted #00ff00;
   border-radius: 50%;
   margin-top: 20px;
 }
