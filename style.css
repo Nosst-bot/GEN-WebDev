@@ -1,6 +1,8 @@
 * {
   margin: 0;
-  background-color: azure;
+  background-color: #1A355B;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
 }
 
 .myli {
@@ -16,7 +18,7 @@ header {
 .content-content-box > div {
   background-color: green;
   width: 300px;
-  height: 10px;
+  height: 30px;
   margin: 30px;
   border: 10px solid black;
 }
@@ -50,6 +52,7 @@ header {
 
 .contenido {
   background-color: aquamarine;
+  color: #000;
 }
 
 .contenedor-con-imagen {
@@ -321,4 +324,85 @@ h1 + p {
 .flex-container-2 :nth-child(2) {
   flex-shrink: 6;
   background-color: #6ad6f1;
+}
+
+.container-grid {
+  display: grid;
+  background-color: #e75517;
+  width: 75%;
+  margin: auto;
+}
+
+.item {
+  background-color: #7360c6;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  border: 1px solid red;
+  text-align: center;
+  margin: 3px;
+}
+.grid-columns {
+  grid-template-columns: 2fr 400px 1fr;
+}
+
+.grid-rows {
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+.grid-rows-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.primero {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.estructura {
+  height: 100vh;
+  width: 75%;
+  grid-template-areas:
+   "_sidebar _header _header"
+   "_sidebar _main _main" 
+   "_footer _footer _footer";
+  grid-template-rows: 80px 1fr 150px;
+  grid-template-columns: 245px 1fr 1fr;
+}
+
+._header {
+  grid-area: _header;
+  background-color: #00ff00;
+}
+
+._sidebar {
+  grid-area: _sidebar;
+  background-color: #9233a9;
+}
+
+._main {
+  grid-area: _main;
+  background-color: #a0b7ff;
+}
+
+._footer {
+  grid-area: _footer;
+  background-color: aqua;
+}
+
+.responsivo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 100%));
+  border: 1px solid #007fff;
+  gap: 5px;
+}
+
+.responsivo > div {
+  background-color: #5144c2c5;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
 }
