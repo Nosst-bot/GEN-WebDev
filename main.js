@@ -37,48 +37,13 @@ function verificarPalindromo(){
     }
 
     const textoReverse = texto.split("").reverse().join("");
-    console.log(textoReverse);
+    
     if (texto == textoReverse) {
         resultado.textContent = "Si, la palabra " + inputPalindromo.value + " es un palindromo."
         return;
     } else {
-        resultado.textContent = "No, la palabra " + texto + " no es un palindromo."
+        resultado.textContent = "No, la palabra " + inputPalindromo.value + " no es un palindromo."
         return;
     }
 
 }
-
-
-function a (num) {
-    let factorial = 1;
-    for (let i = 1; i <=num; i++) {
-        factorial *= i;
-        
-    }
-    return factorial;
-}
-
-const myNumbers = [1,2,3,4,5,6,7]
-const myFunction = arr => {
-    return arr.map(x=> x+3).filter(x => x < 7);
-}
-
-const ejemploPromesa = () => Promise.resolve("A");
-
-function a() {
-    ejemploPromesa().then(resultado => console.log(resultado));
-    console.log("B");
-}
-
-async function b() {
-    console.log(await ejemploPromesa());
-    console.log("B");
-}
-
-var a = function(test1, test2 ){
-    return test1 == test2;
-}
-
-const enumerar = (cadena, caracter) => cadena.split(caracter).length -1;
-
-console.log(enumerar("paranagaricutirimicuaro", "i"));
