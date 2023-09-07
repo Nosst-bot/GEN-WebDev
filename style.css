@@ -3,6 +3,7 @@
   background-color: #1A355B;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
+  box-sizing: border-box;
 }
 
 .myli {
@@ -405,4 +406,94 @@ h1 + p {
   color: #fff;
   padding: 30px;
   text-align: center;
+}
+
+/* INTRO JS FILE */
+
+.introJs {
+  display: grid;
+  grid-template-rows: 70px 1fr 150px;
+  grid-template-areas: 
+  "header_"
+  "main_"
+  "footer_";
+  min-height: 100vh;
+}
+
+.header_ {
+  grid-area: header_;
+  background-color: #ddd;
+  color: #fff;
+  padding: 10px;
+}
+
+.header_ > h1 {
+  display: block;
+  background-color: inherit;
+  color: #000000;
+  font-weight: normal;
+}
+
+.main_ {
+  grid-area: main_;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.containerJs {
+  border-right: 1px solid #979595;
+}
+
+.containerJs h2{
+  font-weight: normal;
+}
+
+.card {
+  max-width: 300px;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card > label {
+  font-weight: 300;
+  color: #ddd;
+  
+}
+
+.card input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc75;
+  border-radius: 5px;
+}
+
+.card button {
+  min-width: 50%;
+  min-height: 50px;
+  margin-top: 30px;
+  font-size: 15px;
+  background-color: #5974de;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #100565;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.footer_ {
+  grid-area: footer_;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.footer_ > p {
+  font-size: 20px;
+  color: #fff;
+  background-color: inherit;
 }
