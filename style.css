@@ -450,8 +450,14 @@ h1 + p {
   font-weight: normal;
 }
 
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .card {
   max-width: 300px;
+  min-height: 260px;
   margin-top: 30px;
   padding: 20px;
   border-radius: 5px;
@@ -461,10 +467,10 @@ h1 + p {
 .card > label {
   font-weight: 300;
   color: #ddd;
-  
+
 }
 
-.card input[type="number"] {
+.card input {
   width: 100%;
   padding: 10px;
   border: 1px solid #cccccc75;
@@ -479,10 +485,15 @@ h1 + p {
   background-color: #5974de;
   cursor: pointer;
   border-radius: 3px;
-  border: 1px solid #100565;
+  border: 1.5px solid #000;
   color: #fff;
   font-weight: 500;
   padding: 10px;
+  transition: background-color 0.5s;
+}
+
+.card button:hover {
+  background-color: #ef4e4e;
 }
 
 .footer_ {
